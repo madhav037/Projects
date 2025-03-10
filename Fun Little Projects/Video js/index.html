@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body>
+    <video id="cameraFeed" autoplay></video>
+    <script>
+        const cameraFeed = document.getElementById('cameraFeed')
+        navigator.mediaDevices.getUserMedia( {video : true} )
+        .then(stream => {
+            cameraFeed.srcObject = stream;
+        })
+        .catch(error => {
+            console.log("Error accessing camera ", error)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Initial setup */
+.main_content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .main_content.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+  
+  .button_slide {
+    display: none;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button_slide.active {
+    display: flex;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  

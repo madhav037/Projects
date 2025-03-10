@@ -1,0 +1,26 @@
+/*
+FRONTEND - FORM         , DASHBOARD
+BACKEND  - AUTHENTICATION, CRU
+ALGORITHM
+DISPLAY (FACUILTY, BATCHWISE, CLASSWISE)
+*/
+
+
+// error ->  {status: 500 , ERRORMSG, FUNCTIONNAME}
+// READ -> {status: 200, DATA : DATA, FUNCTIONNAME}
+// CREATE -> {status: 201, DATA : CREATED DATA, FUNCTIONNAME}
+// DELETE -> {status: 204, FUNCTIONNAME}
+// UPDATE -> {status: 201, DATA : UPDATED DATA, FUNCTIONNAME}
+
+// LOGIN -> {status: 200, DATA : TOKEN, FUNCTIONNAME}
+// LOGOUT -> {status: 204, FUNCTIONNAME}
+// SIGNIN -> {status: 201, DATA : CREATED DATA, FUNCTIONNAME}
+
+// FILE / FUNCTION -> BODY DATA API MATE -> {DATA : ALL_DATA} 
+
+// LOCALHOST/:UNINAME/...
+// LOCALHOST/LOGIN ? singup
+// LOCALHOST/dashboard 
+
+// https://supabase.com/docs/reference/javascript/select
+

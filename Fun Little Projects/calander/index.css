@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background-color: beige;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.month-year:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  border-radius: 100%;
+  margin: 5px;
+  padding: 0px 5px 0px 5px;
+  height: auto;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #ccc;
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+.line{
+    border: rgb(102, 102, 92);
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+}
+.weekdays{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.Sun , .Sat{
+    color: red;
+}
+
+.Sat:hover, .Sun:hover, .Mon:hover, .Tue:hover, .Wed:hover, .Thu:hover, .Fri:hover{
+    cursor: pointer;
+    background-color: #ccc;
+} 
+.Sat, .Sun, .Mon, .Tue, .Wed, .Thu, .Fri, .day{
+    padding: 8px;
+    margin: 1px;
+    border-radius: 25%;
+}   
+
+.days{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 5px;
+    align-items: center;
+    justify-items: center;
+}
+
+.day:hover{
+    background-color: #ccc;
+    border-radius: 100%;
+    padding: 8px 12px;
+}
+
+.today{
+    background-color: red;
+    padding: 8px 12px;
+    border-radius: 100%;
+}
+.today:hover{
+    background-color: red;
+    border-radius: 100%;
+    padding: 8px 12px;
+}

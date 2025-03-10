@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+}
+
+.control-menu {
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 5px;
+    position: fixed;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 0.5fr 1fr 0.2fr 0.2fr 0.2fr;
+    overflow-x: hidden;
+}
+
+#input-place {
+    margin: 5px;
+    padding: 5px;
+}
